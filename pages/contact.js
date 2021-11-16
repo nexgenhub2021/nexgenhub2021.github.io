@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Contact.module.css'
+import React from 'react'
 
 const About = () => {
   return (
@@ -32,7 +33,7 @@ const About = () => {
         </form>
       </div>
     </>
-  );
+  )
 }
- 
-export default About;
+
+export default About

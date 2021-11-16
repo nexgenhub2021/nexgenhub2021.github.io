@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import React from 'react';
+import React from 'react'
 
 const About = () => {
   return (
@@ -15,7 +15,7 @@ const About = () => {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro reiciendis ea quibusdam nemo nobis hic iure quos odio corporis, laudantium animi laborum voluptatem quia, veniam fuga aperiam officia sequi!</p>
       </div>
     </React.Fragment>
-  );
+  )
 }
- 
-export default About;
+
+export default About
