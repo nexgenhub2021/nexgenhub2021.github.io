@@ -1,25 +1,25 @@
 import Head from 'next/head'
-import styles from '../styles/Contact.module.css'
 import React from 'react'
 
-const About = () => {
+const Contact = () => {
   return (
-    <>
+    <React.Fragment>
       <Head>
         <title>NexGenHub | Contact</title>
-        <meta name="keywords" content="ninjas"/>
+        <meta name="keywords" content="web"/>
       </Head>
       <div>
-        <form className={styles.container} onSubmit={(event) => event.preventDefault()}>
+        <form className="p-5 rounded-md bg-gray-200" onSubmit={(event) => event.preventDefault()}>
+
           <h1>Contact Us</h1>
 
           <label htmlFor="email">Email</label>
 
-          <input className={styles.text} type="email" id="email" required/>
+          <input className="my-text" type="email" id="email" required/>
 
           <label htmlFor="service">Service</label>
 
-          <select className={styles.text} name="service" id="service" required>
+          <select className="my-text" name="service" id="service" required>
             <option value="web" defaultChecked>Website Creation</option>
             <option value="api">REST-ful API</option>
             <option value="security">Cyber Security</option>
@@ -27,13 +27,13 @@ const About = () => {
 
           <label htmlFor="subject">Subject</label>
 
-          <textarea className={styles.text} id="subject" name="subject" placeholder="Some details regarding your query..." rows={10} required/>
+          <textarea className="my-text" id="subject" name="subject" placeholder="Some details regarding your query..." rows={10} required/>
 
-          <button className={styles.btn} type="submit">Submit</button>
+          <button className="bg-green-600 hover:bg-green-500 text-white rounded-md border-none cursor-pointer py-3 px-5" type="submit">Submit</button>
         </form>
       </div>
-    </>
+    </React.Fragment>
   )
 }
 
-export default About
+export default Contact
