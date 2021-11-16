@@ -1,8 +1,7 @@
-const basePath = process.env.NODE_ENV === 'production' ? '' : '';
+const basePath = process.env.NODE_ENV === 'production' ? '' : ''
 
 module.exports = {
   reactStrictMode: true,
   basePath,
-  assetPrefix: `${basePath}/`,
-  images: {loader: 'custom'}
-};
+  assetPrefix: `${basePath}/`
+}
