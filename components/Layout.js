@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 
 function Layout ({ children }) {
   return (
-    <div className="content">
+    <div className="container mx-auto">
       <Navbar/>
       {children}
       <Footer/>

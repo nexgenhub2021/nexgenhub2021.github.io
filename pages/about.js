@@ -9,10 +9,10 @@ const About = () => {
         <meta name="keywords" content="web"/>
       </Head>
       <div>
-        <h1>About</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro reiciendis ea quibusdam nemo nobis hic iure quos odio corporis, laudantium animi laborum voluptatem quia, veniam fuga aperiam officia sequi!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro reiciendis ea quibusdam nemo nobis hic iure quos odio corporis, laudantium animi laborum voluptatem quia, veniam fuga aperiam officia sequi!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa porro reiciendis ea quibusdam nemo nobis hic iure quos odio corporis, laudantium animi laborum voluptatem quia, veniam fuga aperiam officia sequi!</p>
+        <h1 className="my-title">About</h1>
+        <p className="my-desc">We create static websites, web apps, RESTful APIs, and much more.</p>
+        <p className="my-desc">We can also handle deployment and maintainence of your websites and servers.</p>
+        <p className="my-desc">Feel free to contact us regarding any queries!</p>
       </div>
     </React.Fragment>
   )
