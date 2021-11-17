@@ -14,10 +14,10 @@ body {
   @apply w-full p-3 border-gray-300 border-2 border-solid rounded box-border mt-1.5 mb-4 resize-y;
 }
 .my-title {
-  @apply text-gray-800 pb-5 text-center text-lg shadow-sm;
+  @apply text-gray-800 pb-5 text-center text-xl shadow-sm;
 }
 .my-desc {
-  @apply text-gray-700;
+  @apply text-gray-700 text-center text-lg;
 }
 }
 
