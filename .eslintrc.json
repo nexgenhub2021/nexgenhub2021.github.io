@@ -5,9 +5,10 @@
         "node": true
     },
     "extends": [
-        "plugin:@next/next/recommended",
-        "plugin:react/recommended",
-        "standard"
+      "standard",
+      "plugin:react/recommended",
+      "plugin:@next/next/recommended",
+      "next/core-web-vitals"
     ],
     "parserOptions": {
         "ecmaFeatures": {
