@@ -9,9 +9,9 @@ const Contact = () => {
         <meta name="keywords" content="web"/>
       </Head>
       <div>
-        <form className="p-5 rounded-md bg-gray-200" onSubmit={(event) => event.preventDefault()}>
+        <form className="p-5 rounded-md bg-gray-200 text-center sm:text-left" onSubmit={(event) => event.preventDefault()}>
 
-          <h1>Contact Us</h1>
+          <h1 className="my-title">Contact Us</h1>
 
           <label htmlFor="email">Email</label>
 
@@ -29,7 +29,7 @@ const Contact = () => {
 
           <textarea className="my-text" id="subject" name="subject" placeholder="Some details regarding your query..." rows={10} required/>
 
-          <button className="bg-green-600 hover:bg-green-500 text-white rounded-md border-none cursor-pointer py-3 px-5" type="submit">Submit</button>
+          <button className="bg-green-600 hover:bg-green-500 text-white rounded-md border-none cursor-pointer py-3 px-5 w-full sm:w-min" type="submit">Submit</button>
         </form>
       </div>
     </React.Fragment>

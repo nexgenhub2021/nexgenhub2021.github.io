@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@layer base {
+html {
+  @apply antialiased;
+}
+body {
+  background: #f2f2f1;
+  color: #333;
+  font-family: "Nunito";
+}
+}
+@layer components {
+.my-text {
+  @apply w-full p-3 border-gray-300 border-2 border-solid rounded box-border mt-1.5 mb-4 resize-y;
+}
+.my-title {
+  @apply text-gray-800 pb-5 text-center text-lg shadow-sm;
+}
+.my-desc {
+  @apply text-gray-700;
+}
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0a65c0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0b4f97;
+  border-radius: 100vh;
+  border: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6393d1;
+}
