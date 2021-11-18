@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
+import Head from 'next/head'
 
 const NotFound = () => {
   const router = useRouter()
@@ -14,7 +15,13 @@ const NotFound = () => {
     }, 3000)
   })
 
-  return (<section className="text-gray-600 body-font">
+  return (
+  <React.Fragment>
+    <Head>
+        <title>NexGenHub | About</title>
+        <meta name="keywords" content="web"/>
+    </Head>
+  <section className="text-gray-600 body-font">
   <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
     <Image className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="/images/dummy.png" width={720} height={600}/>
     <div className="text-center lg:w-2/3 w-full">
@@ -26,7 +33,8 @@ const NotFound = () => {
       </div>
     </div>
   </div>
-</section>)
+</section>
+</React.Fragment>)
 }
 
 export default NotFound
