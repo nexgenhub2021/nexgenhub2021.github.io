@@ -1,61 +1,37 @@
 import React from 'react'
+import Head from 'next/head'
+import Image from 'next/image'
 
-const About = () => {
-  return (<section className="text-gray-600 body-font">
-  <div className="container px-5 py-24 mx-auto">
-    <div className="text-center mb-20">
-      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">About Us</h1>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">We provide a wide variety of services, each tailored to suit your needs.</p>
-      <div className="flex mt-6 justify-center">
-        <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+function About () {
+  return (
+    <React.Fragment>
+      <Head>
+        <title>NexGenHub | About</title>
+        <meta name="keywords" content="web"/>
+      </Head>
+      <section className="text-gray-600 body-font">
+  <div className="container px-5 py-24 mx-auto flex flex-col">
+    <div className="lg:w-4/6 mx-auto">
+      <div className="rounded-lg h-64 overflow-hidden">
+        <Image alt="content" class="object-cover object-center h-full w-full" src="/images/dummy.png" width={1200} height={500}/>
       </div>
-    </div>
-    <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-      <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-        <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10" viewBox="0 0 24 24">
-            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-          </svg>
-        </div>
-        <div className="flex-grow">
-          <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Website Creation</h2>
-          <p className="leading-relaxed text-base">We specialize in responsive website design, using popular frameworks like React.</p>
-          <a className="mt-3 text-indigo-500 inline-flex items-center">Learn More
-            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
+      <div className="flex flex-col sm:flex-row mt-10">
+        <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+          <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
             </svg>
-          </a>
+          </div>
+          <div className="flex flex-col items-center text-center justify-center">
+            <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">Phoebe Caulfield</h2>
+            <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+            <p className="text-base">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p>
+          </div>
         </div>
-      </div>
-      <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-        <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10" viewBox="0 0 24 24">
-            <circle cx="6" cy="6" r="3"></circle>
-            <circle cx="6" cy="18" r="3"></circle>
-            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-          </svg>
-        </div>
-        <div className="flex-grow">
-          <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Web Hosting</h2>
-          <p className="leading-relaxed text-base">We will host your website and optimize it for maximum performance and reach.</p>
-          <a className="mt-3 text-indigo-500 inline-flex items-center">Learn More
-            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
-        <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
-          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10" viewBox="0 0 24 24">
-            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-            <circle cx="12" cy="7" r="4"></circle>
-          </svg>
-        </div>
-        <div className="flex-grow">
-          <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Web Maintainence</h2>
-          <p className="leading-relaxed text-base">Provide us with your website and hosting solutions, and we&apos;ll make sure that it keeps running smoothly.</p>
-          <a className="mt-3 text-indigo-500 inline-flex items-center">Learn More
+        <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+          <p className="leading-relaxed text-lg mb-4">Meggings portland fingerstache lyft, post-ironic fixie man bun banh mi umami everyday carry hexagon locavore direct trade art party. Locavore small batch listicle gastropub farm-to-table lumbersexual salvia messenger bag. Coloring book flannel truffaut craft beer drinking vinegar sartorial, disrupt fashion axe normcore meh butcher. Portland 90&apos;s scenester vexillologist forage post-ironic asymmetrical, chartreuse disrupt butcher paleo intelligentsia pabst before they sold out four loko. 3 wolf moon brooklyn.</p>
+          <a className="text-indigo-500 inline-flex items-center">Learn More
             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -63,9 +39,10 @@ const About = () => {
         </div>
       </div>
     </div>
-    <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Tell us what you want</button>
   </div>
-</section>)
+</section>
+    </React.Fragment>
+  )
 }
 
 export default About

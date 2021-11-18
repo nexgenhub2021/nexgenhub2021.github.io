@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Cog from '../svg/Cog'
+import Cog from './Cog'
 
 function Footer () {
   return (<footer className="text-gray-600 body-font">
