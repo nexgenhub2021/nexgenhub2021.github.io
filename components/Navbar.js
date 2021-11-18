@@ -1,5 +1,5 @@
 import React from 'react'
-import Cog from '../svg/Cog'
+import Cog from '../pages/Cog'
 import Link from 'next/link'
 
 function Navbar () {
