@@ -4,8 +4,8 @@ const About = () => {
   return (<section className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto">
     <div className="text-center mb-20">
-      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Raw Denim Heirloom Man Braid</h1>
-      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">About Us</h1>
+      <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">We provide a wide variety of services, each tailored to suit your needs.</p>
       <div className="flex mt-6 justify-center">
         <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
       </div>
@@ -18,8 +18,8 @@ const About = () => {
           </svg>
         </div>
         <div className="flex-grow">
-          <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Shooting Stars</h2>
-          <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+          <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Website Creation</h2>
+          <p className="leading-relaxed text-base">We specialize in responsive website design, using popular frameworks like React.</p>
           <a className="mt-3 text-indigo-500 inline-flex items-center">Learn More
             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -36,8 +36,8 @@ const About = () => {
           </svg>
         </div>
         <div className="flex-grow">
-          <h2 className="text-gray-900 text-lg title-font font-medium mb-3">The Catalyzer</h2>
-          <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+          <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Web Hosting</h2>
+          <p className="leading-relaxed text-base">We will host your website and optimize it for maximum performance and reach.</p>
           <a className="mt-3 text-indigo-500 inline-flex items-center">Learn More
             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -53,8 +53,8 @@ const About = () => {
           </svg>
         </div>
         <div className="flex-grow">
-          <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Neptune</h2>
-          <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+          <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Web Maintainence</h2>
+          <p className="leading-relaxed text-base">Provide us with your website and hosting solutions, and we&apos;ll make sure that it keeps running smoothly.</p>
           <a className="mt-3 text-indigo-500 inline-flex items-center">Learn More
             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -63,7 +63,7 @@ const About = () => {
         </div>
       </div>
     </div>
-    <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+    <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Tell us what you want</button>
   </div>
 </section>)
 }
