@@ -1,7 +1,5 @@
 import Layout from '../components/Layout'
-import '../styles/before.css'
-import '../styles/styles.css'
-import '../styles/after.css'
+import '../styles/global.css'
 import React from 'react'
 
 function MyApp ({ Component, pageProps }) {
