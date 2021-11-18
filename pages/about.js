@@ -1,7 +1,14 @@
 import React from 'react'
+import Head from 'next/head'
 
 const About = () => {
-  return (<section className="text-gray-600 body-font">
+  return (
+  <React.Fragment>
+    <Head>
+        <title>NexGenHub | About</title>
+        <meta name="keywords" content="web"/>
+      </Head>
+  <section className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto">
     <div className="text-center mb-20">
       <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">About Us</h1>
@@ -65,7 +72,8 @@ const About = () => {
     </div>
     <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Tell us what you want</button>
   </div>
-</section>)
+</section>
+</React.Fragment>)
 }
 
 export default About

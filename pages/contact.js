@@ -1,7 +1,14 @@
 import React from 'react'
+import Head from 'next/head'
 
 const Contact = () => {
-  return (<section className="text-gray-600 body-font relative">
+  return (
+  <React.Fragment>
+    <Head>
+        <title>NexGenHub | Contact</title>
+        <meta name="keywords" content="web"/>
+      </Head>
+  <section className="text-gray-600 body-font relative">
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-col text-center w-full mb-12">
       <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
@@ -32,8 +39,8 @@ const Contact = () => {
         </div>
         <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
           <a className="text-indigo-500">nexgenhub2021@gmail.com</a>
-          <p className="leading-normal my-5">42 Pushpanjali Complex
-            <br/>Shastripuram, Agra 282007
+          <p className="leading-normal my-5 font-bold">Aditya Sardana <span className="text-gray-400">(Customer Relations)</span>
+            <br/><a href="tel:9012727027" className="underline">Ph. 9012727027</a>
           </p>
           <span className="inline-flex">
             <a className="text-gray-500">
@@ -62,7 +69,8 @@ const Contact = () => {
       </div>
     </div>
   </div>
-</section>)
+</section>
+</React.Fragment>)
 }
 
 export default Contact
